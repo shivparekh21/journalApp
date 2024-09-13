@@ -20,7 +20,7 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
     private UserDetailsServiceImpl userDetailsService;
 
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) throws Exception {  //         Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
         http.authorizeRequests()
                 .antMatchers("/journal/**","/user/**").authenticated()
                 .antMatchers("/admin/**").hasRole("Admin")
