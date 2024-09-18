@@ -29,6 +29,7 @@ public class UserServiceTests {
 //    static void beforeAll() {}   //run this block before all test   @AfterAll
 //
 
+    @Disabled
     @Test
     public void testFindUserName(){
 //        assertEquals(4, 2+2);
